@@ -1,0 +1,535 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&family=Roboto:wght@400;500;700;900&display=swap");
+* {
+  scroll-behavior: smooth;
+  transition: 400ms;
+}
+* ::-webkit-scrollbar {
+  width: 6px;
+  background-color: #F1F1F1;
+  /* or add it to the track */
+}
+* ::-webkit-scrollbar-thumb {
+  transition: 350ms;
+  background: #FFF118;
+}
+* ::-webkit-scrollbar-thumb:active {
+  background: #f8e322;
+}
+* body {
+  background-color: #222630;
+}
+* html, * body {
+  background-color: #222630;
+  max-width: 100%;
+  overflow-x: hidden !important;
+}
+* html .btn:focus, * body .btn:focus {
+  outline: none;
+  box-shadow: none;
+}
+* html nav .collapsed-width, * body nav .collapsed-width {
+  width: 100%;
+}
+* html nav .nav-justify, * body nav .nav-justify {
+  justify-content: flex-end;
+}
+* html nav.bg-kiskadee, * body nav.bg-kiskadee {
+  min-height: 70px;
+  background-color: #292D39 !important;
+  padding: 0.8rem;
+  box-shadow: 0px 0px 2px rgba(66, 69, 79, 0.8) !important;
+}
+* html nav.bg-kiskadee button.navbar-toggler, * body nav.bg-kiskadee button.navbar-toggler {
+  outline: none;
+  border: none;
+}
+* html nav.bg-kiskadee button.navbar-toggler:active, * html nav.bg-kiskadee button.navbar-toggler:hover, * html nav.bg-kiskadee button.navbar-toggler:focus, * body nav.bg-kiskadee button.navbar-toggler:active, * body nav.bg-kiskadee button.navbar-toggler:hover, * body nav.bg-kiskadee button.navbar-toggler:focus {
+  outline: none;
+  border: none;
+  box-shadow: none;
+}
+* html nav.bg-kiskadee button.navbar-toggler:active .menu-btn, * html nav.bg-kiskadee button.navbar-toggler:hover .menu-btn, * html nav.bg-kiskadee button.navbar-toggler:focus .menu-btn, * body nav.bg-kiskadee button.navbar-toggler:active .menu-btn, * body nav.bg-kiskadee button.navbar-toggler:hover .menu-btn, * body nav.bg-kiskadee button.navbar-toggler:focus .menu-btn {
+  box-shadow: 0px 0px 2px rgba(255, 241, 24, 0.8) !important;
+}
+* html nav.bg-kiskadee button.navbar-toggler .menu-btn, * body nav.bg-kiskadee button.navbar-toggler .menu-btn {
+  position: relative;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  border: 1px solid #FFF118;
+}
+* html nav.bg-kiskadee button.navbar-toggler .menu-btn .menu-btn-burguer, * body nav.bg-kiskadee button.navbar-toggler .menu-btn .menu-btn-burguer {
+  padding: 0;
+  width: 14px;
+  height: 2px;
+  background: #FFF118;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(25, 101, 47, 0.2);
+  transition: all 0.5s ease-in-out;
+}
+* html nav.bg-kiskadee button.navbar-toggler .menu-btn .menu-btn-burguer::before, * html nav.bg-kiskadee button.navbar-toggler .menu-btn .menu-btn-burguer::after, * body nav.bg-kiskadee button.navbar-toggler .menu-btn .menu-btn-burguer::before, * body nav.bg-kiskadee button.navbar-toggler .menu-btn .menu-btn-burguer::after {
+  content: "";
+  padding: 0;
+  position: absolute;
+  width: 14px;
+  height: 2px;
+  background: #FFF118;
+  border-radius: 5px;
+}
+* html nav.bg-kiskadee button.navbar-toggler .menu-btn .menu-btn-burguer::before, * body nav.bg-kiskadee button.navbar-toggler .menu-btn .menu-btn-burguer::before {
+  transform: translate(-7px, -4px);
+}
+* html nav.bg-kiskadee button.navbar-toggler .menu-btn .menu-btn-burguer::after, * body nav.bg-kiskadee button.navbar-toggler .menu-btn .menu-btn-burguer::after {
+  transform: translate(-7px, 4px);
+}
+* html nav.bg-kiskadee a.font-nav-logo, * body nav.bg-kiskadee a.font-nav-logo {
+  max-height: 41px;
+  padding-bottom: 0;
+  transition: 200ms;
+  font-size: 1.5rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  margin: 0;
+}
+* html nav.bg-kiskadee a.font-nav-logo:hover, * body nav.bg-kiskadee a.font-nav-logo:hover {
+  opacity: 0.9;
+}
+* html nav.bg-kiskadee a.font-nav-logo img, * body nav.bg-kiskadee a.font-nav-logo img {
+  max-height: 30px;
+  margin-right: 0.2rem;
+  padding: 0;
+}
+* html nav.bg-kiskadee a.font-nav-logo strong, * body nav.bg-kiskadee a.font-nav-logo strong {
+  max-height: 32px;
+}
+* html nav.bg-kiskadee a.font-nav-logo strong:hover, * body nav.bg-kiskadee a.font-nav-logo strong:hover {
+  transition: 300ms;
+  border-bottom: 2px double rgba(255, 241, 24, 0.8);
+}
+* html nav.bg-kiskadee ul, * body nav.bg-kiskadee ul {
+  max-height: auto;
+  display: inline-flex;
+  margin: 0 !important;
+}
+* html nav.bg-kiskadee ul .nav-item, * body nav.bg-kiskadee ul .nav-item {
+  font-family: "Roboto", sans-serif;
+  font-weight: regular;
+  font-size: 1rem;
+  margin-left: 3rem;
+}
+* html nav.bg-kiskadee ul .nav-item .nav-link, * body nav.bg-kiskadee ul .nav-item .nav-link {
+  font-weight: bold;
+  transition: 500ms;
+  color: #F1F1F1;
+}
+* html nav.bg-kiskadee ul .nav-item .nav-link:hover, * body nav.bg-kiskadee ul .nav-item .nav-link:hover {
+  color: #c0c0c0;
+  transition: 500ms;
+}
+* html nav.bg-kiskadee ul .nav-item:hover, * html nav.bg-kiskadee ul .nav-item:active, * body nav.bg-kiskadee ul .nav-item:hover, * body nav.bg-kiskadee ul .nav-item:active {
+  border-bottom: 1px solid #FFF118;
+}
+* html main .margin-home, * body main .margin-home {
+  margin-top: 9rem;
+}
+@media (max-width: 768px) {
+  * html main .margin-home, * body main .margin-home {
+    margin-top: 6rem;
+  }
+}
+* html main .bg-main, * body main .bg-main {
+  width: 100%;
+  min-height: 600px;
+  background-image: url("/assets/img/home/home.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+* html main h1.home-title, * body main h1.home-title {
+  text-shadow: 2px 2px 0px #131313 !important;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  color: #F1F1F1;
+  max-width: 700px;
+}
+* html main h5.home-muted, * body main h5.home-muted {
+  text-shadow: 0px 0px 2px rgba(255, 241, 24, 0.6) !important;
+  font-family: "Poppins", sans-serif;
+  color: #FFF118;
+}
+* html main p.home-text, * body main p.home-text {
+  margin: 0.8em 0 0.4em 0;
+  color: #F1F1F1;
+  max-width: 700px;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.1rem;
+}
+* html main a.btn-kiskadee, * body main a.btn-kiskadee {
+  transition: 300ms;
+  border-radius: 0.4em;
+  background-color: #FFF118;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+* html main a.btn-kiskadee:hover, * body main a.btn-kiskadee:hover {
+  transition: 300ms;
+  box-shadow: 0px 0px 10px #FFF118 !important;
+}
+* html main a.btn-kiskadee:focus, * body main a.btn-kiskadee:focus {
+  box-shadow: 0px 0px 10px #FFF118 !important;
+}
+* html main a.btn-kiskadee-secondary, * body main a.btn-kiskadee-secondary {
+  transition: 300ms;
+  margin-left: 1rem;
+  border-radius: 0.4em;
+  background: transparent;
+  border: 1px solid #F1F1F1;
+  color: #F1F1F1;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+* html main a.btn-kiskadee-secondary:hover, * body main a.btn-kiskadee-secondary:hover {
+  transition: 300ms;
+  box-shadow: 0px 0px 10px #F1F1F1 !important;
+  color: #FFF;
+}
+* html main a.btn-kiskadee-secondary:focus, * body main a.btn-kiskadee-secondary:focus {
+  box-shadow: 0px 0px 10px #F1F1F1 !important;
+}
+@media (max-width: 991px) {
+  * html main a.btn-kiskadee, * html main a.btn-kiskadee-secondary, * body main a.btn-kiskadee, * body main a.btn-kiskadee-secondary {
+    padding-left: 5rem !important;
+    padding-right: 5rem !important;
+  }
+}
+@media (max-width: 768px) {
+  * html main a.btn-kiskadee-secondary, * body main a.btn-kiskadee-secondary {
+    margin-left: 0;
+  }
+}
+@media (max-width: 575px) {
+  * html main .margin-home, * body main .margin-home {
+    margin-top: 3rem;
+  }
+}
+* html .header, * body .header {
+  margin-top: 1.5rem;
+}
+* html .header hr, * body .header hr {
+  margin-top: 0;
+  height: 2px;
+  opacity: 100%;
+  width: 50px;
+  color: #FFF118;
+}
+* html .header h2.section-heading, * body .header h2.section-heading {
+  font-size: 28px;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  color: #F1F1F1;
+}
+* html .header p, * body .header p {
+  text-align: justify;
+  font-family: "Roboto", sans-serif;
+}
+* html section.section-services, * body section.section-services {
+  background-color: #292D39;
+  border-bottom: 1px solid #2B303B;
+  min-height: 450px;
+  max-height: auto;
+  box-shadow: 0px 0px 100px #2B303B !important;
+}
+* html section.section-services .card, * body section.section-services .card {
+  background: transparent;
+  border: 3px solid;
+  border-color: #FFF118;
+  border-radius: 0.4em;
+}
+* html section.section-services .card:hover, * body section.section-services .card:hover {
+  cursor: text;
+  box-shadow: 3px 3px 0px #f8e322 !important;
+}
+* html section.section-services .card .card-title, * body section.section-services .card .card-title {
+  color: #F1F1F1;
+}
+* html section.section-services .card .card-title h3, * body section.section-services .card .card-title h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+}
+* html section.section-services .card .card-body, * body section.section-services .card .card-body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+* html section.section-services .card .card-body p, * body section.section-services .card .card-body p {
+  font-family: "Roboto", sans-serif;
+  color: #F1F1F1;
+  width: 70%;
+}
+* html section.section-about-us, * body section.section-about-us {
+  background: #2B303B;
+}
+* html section.section-about-us h2, * body section.section-about-us h2 {
+  transition: 300ms;
+}
+* html section.section-about-us h2:hover, * body section.section-about-us h2:hover {
+  transition: 300ms;
+  text-shadow: 3px 3px 0px #42454F !important;
+}
+* html section.section-about-us .about-us-body p, * body section.section-about-us .about-us-body p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+  text-align: justify;
+  color: #F1F1F1;
+}
+* html section.section-about-us .about-us-heading, * body section.section-about-us .about-us-heading {
+  margin-left: 0.8rem;
+}
+* html section.section-projects, * body section.section-projects {
+  background-color: #292D39;
+  overflow: hidden;
+  font-family: "Poppins", sans-serif;
+}
+* html section.section-projects .project-card, * body section.section-projects .project-card {
+  background-color: #222630;
+}
+* html section.section-projects a, * html section.section-projects .project-content, * body section.section-projects a, * body section.section-projects .project-content {
+  color: #F1F1F1;
+  font-weight: 700;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+* html section.section-projects a img, * html section.section-projects .project-content img, * body section.section-projects a img, * body section.section-projects .project-content img {
+  border-top: 3px solid #FFF118;
+}
+* html section.section-projects a:hover, * html section.section-projects .project-content:hover, * body section.section-projects a:hover, * body section.section-projects .project-content:hover {
+  color: #FFF118;
+}
+* html section.section-projects a img, * html section.section-projects .project-content img, * body section.section-projects a img, * body section.section-projects .project-content img {
+  height: 333px;
+  object-fit: cover;
+  filter: blur(0);
+}
+* html section.section-projects a img:hover, * html section.section-projects .project-content img:hover, * body section.section-projects a img:hover, * body section.section-projects .project-content img:hover {
+  filter: blur(1px);
+}
+* html section.section-projects .cards-projects, * body section.section-projects .cards-projects {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  word-wrap: break-word;
+  background-clip: border-box;
+  background-color: #292D39 !important;
+  border: none;
+  overflow: hidden;
+}
+* html section.section-projects .card-radius, * body section.section-projects .card-radius {
+  border-radius: 10px;
+}
+* html section.section-contact .contact-text-row, * body section.section-contact .contact-text-row {
+  text-align: center;
+  width: 70%;
+}
+@media (max-width: 768px) {
+  * html section.section-contact, * body section.section-contact {
+    width: 100%;
+  }
+}
+* html section.section-contact p, * body section.section-contact p {
+  font-size: 1.1rem;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  color: #F1F1F1;
+}
+* html section.section-contact p a, * body section.section-contact p a {
+  text-decoration: none;
+  color: #FFF118;
+}
+* html section.section-contact p a:hover, * body section.section-contact p a:hover {
+  transition: 300ms;
+  border-bottom: 1px solid #FFF118;
+}
+* html section.section-contact a.btn-kiskadee, * body section.section-contact a.btn-kiskadee {
+  padding: 1.5rem;
+  transition: 300ms;
+  border-radius: 0.4em;
+  background-color: #FFF118;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+* html section.section-contact a.btn-kiskadee:hover, * body section.section-contact a.btn-kiskadee:hover {
+  transition: 300ms;
+  box-shadow: 0px 0px 5px #FFF118 !important;
+}
+* html section.section-contact a.btn-kiskadee:focus, * body section.section-contact a.btn-kiskadee:focus {
+  box-shadow: 0px 0px 5px #FFF118 !important;
+}
+* html section.section-social, * body section.section-social {
+  border-top: 1px solid #222630;
+  background-color: #2B303B;
+  padding-top: 1.5rem;
+  padding-bottom: 5rem;
+}
+* html section.section-social a, * body section.section-social a {
+  border-bottom: 1px solid #FFF118;
+  text-shadow: 2px 2px 0px rgba(255, 241, 24, 0.2) !important;
+  width: 80%;
+  text-decoration: none;
+  color: #F1F1F1;
+  transition: 300ms;
+}
+* html section.section-social a:hover, * body section.section-social a:hover {
+  text-decoration: underline;
+}
+* html section.section-social a .social-body, * body section.section-social a .social-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+* html section.section-social a .social-body .social-title, * body section.section-social a .social-body .social-title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+@media (max-width: 991px) {
+  * html section.section-social a, * body section.section-social a {
+    flex-direction: column;
+    text-align: center;
+  }
+  * html section.section-social a img, * body section.section-social a img {
+    display: none;
+  }
+}
+* html section.section-get-in-touch, * body section.section-get-in-touch {
+  background-color: #222630;
+  color: #F1F1F1;
+}
+* html section.section-get-in-touch form input, * html section.section-get-in-touch form textarea, * body section.section-get-in-touch form input, * body section.section-get-in-touch form textarea {
+  font-family: "Poppins", sans-serif;
+  color: #F1F1F1;
+  background-color: #292D39;
+  border: none;
+  resize: none;
+}
+* html section.section-get-in-touch form input::placeholder, * html section.section-get-in-touch form textarea::placeholder, * body section.section-get-in-touch form input::placeholder, * body section.section-get-in-touch form textarea::placeholder {
+  font-family: "Roboto", sans-serif;
+  color: rgba(241, 241, 241, 0.2);
+}
+* html section.section-get-in-touch form input::ms-input-placeholder, * html section.section-get-in-touch form textarea::ms-input-placeholder, * body section.section-get-in-touch form input::ms-input-placeholder, * body section.section-get-in-touch form textarea::ms-input-placeholder {
+  color: #42454F;
+}
+* html section.section-get-in-touch form input:active, * html section.section-get-in-touch form input:focus, * html section.section-get-in-touch form textarea:active, * html section.section-get-in-touch form textarea:focus, * body section.section-get-in-touch form input:active, * body section.section-get-in-touch form input:focus, * body section.section-get-in-touch form textarea:active, * body section.section-get-in-touch form textarea:focus {
+  transition: 500ms;
+  color: #F1F1F1;
+  font-family: "Poppins", sans-serif;
+  background-color: #292D39;
+  box-shadow: 3px 3px 0px rgba(255, 241, 24, 0.8);
+}
+* html section.section-get-in-touch form button.btn-kiskadee, * body section.section-get-in-touch form button.btn-kiskadee {
+  transition: 300ms;
+  border-radius: 0.4em;
+  background-color: #FFF118;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+* html section.section-get-in-touch form button.btn-kiskadee:hover, * body section.section-get-in-touch form button.btn-kiskadee:hover {
+  transition: 300ms;
+  box-shadow: 0px 0px 10px #FFF118 !important;
+}
+* html section.section-get-in-touch form button.btn-kiskadee:focus, * body section.section-get-in-touch form button.btn-kiskadee:focus {
+  box-shadow: 0px 0px 10px #FFF118 !important;
+}
+* html section.section-get-in-touch form button.btn-kiskadee-secondary, * body section.section-get-in-touch form button.btn-kiskadee-secondary {
+  transition: 300ms;
+  margin-left: 1rem;
+  border-radius: 0.4em;
+  background: transparent;
+  border: 1px solid #F1F1F1;
+  color: #F1F1F1;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+* html section.section-get-in-touch form button.btn-kiskadee-secondary:hover, * body section.section-get-in-touch form button.btn-kiskadee-secondary:hover {
+  transition: 300ms;
+  box-shadow: 0px 0px 10px #F1F1F1 !important;
+  color: #FFF;
+}
+* html section.section-get-in-touch form button.btn-kiskadee-secondary:focus, * body section.section-get-in-touch form button.btn-kiskadee-secondary:focus {
+  box-shadow: 0px 0px 10px #F1F1F1 !important;
+}
+@media (max-width: 991px) {
+  * html section.section-get-in-touch form button.btn-kiskadee, * html section.section-get-in-touch form button.btn-kiskadee-secondary, * body section.section-get-in-touch form button.btn-kiskadee, * body section.section-get-in-touch form button.btn-kiskadee-secondary {
+    padding-left: 5rem !important;
+    padding-right: 5rem !important;
+  }
+}
+@media (max-width: 768px) {
+  * html section.section-get-in-touch form a.btn-kiskadee-secondary, * body section.section-get-in-touch form a.btn-kiskadee-secondary {
+    margin-left: 0;
+  }
+}
+* html footer.section-footer, * body footer.section-footer {
+  border-top: 1px solid #42454F;
+  min-height: 90px;
+  background-color: #292D39;
+  color: #F1F1F1;
+  font-weight: 100;
+  font-family: "Roboto", sans-serif;
+}
+* html footer.section-footer .footer-body, * body footer.section-footer .footer-body {
+  transition: 100ms;
+  margin-top: 2rem;
+}
+* html footer.section-footer .footer-body p, * body footer.section-footer .footer-body p {
+  margin: 0;
+}
+* html footer.section-footer .footer-body button.btn-go-top, * body footer.section-footer .footer-body button.btn-go-top {
+  transition: 500ms;
+  border: 1px solid #F1F1F1;
+}
+* html footer.section-footer .footer-body button.btn-go-top:hover, * html footer.section-footer .footer-body button.btn-go-top:active, * body footer.section-footer .footer-body button.btn-go-top:hover, * body footer.section-footer .footer-body button.btn-go-top:active {
+  transition: 500ms;
+  opacity: 0.6;
+}
+* html footer.section-footer .footer-body button.btn-go-top i, * body footer.section-footer .footer-body button.btn-go-top i {
+  color: #F1F1F1;
+}
+@media (max-width: 991px) {
+  * html nav .collapsed-width, * body nav .collapsed-width {
+    margin-left: 10px;
+  }
+  * html main button.btn-kiskadee-secondary, * html main button.btn-kiskadee, * body main button.btn-kiskadee-secondary, * body main button.btn-kiskadee {
+    width: 40%;
+  }
+}
+* html .page-thanks, * body .page-thanks {
+  font-family: "Poppins", sans-serif;
+  color: #FFF118 !important;
+}
+@media (max-width: 768px) {
+  * html nav .nav-justify, * body nav .nav-justify {
+    display: inline-block;
+  }
+  * html nav .nav-justify ul, * body nav .nav-justify ul {
+    display: flex;
+    flex-direction: column;
+  }
+  * html nav .nav-justify ul li, * body nav .nav-justify ul li {
+    margin: 0;
+    padding: 0 !important;
+  }
+  * html main button.btn-kiskadee-secondary, * html main button.btn-kiskadee, * body main button.btn-kiskadee-secondary, * body main button.btn-kiskadee {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
